@@ -27,12 +27,14 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     "marcschotman.pythonanywhere.com",
+    "127.0.0.1",
 ]
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'image_gallery.apps.ImageGalleryConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -123,3 +125,8 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+MEDIA_ROOT = 'C:/Users/m_a_s/repos/studio-steenoven/media/'
+
+
+MEDIA_URL = 'media/'
